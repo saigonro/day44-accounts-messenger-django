@@ -26,7 +26,7 @@ SECRET_KEY = '#dfo2vxbeqp)s%tsr-7=9t=6tal9@=w5c_xum2gj%%%f__=krc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['day44-django-testing-ddnro.c9users.io']
+ALLOWED_HOSTS = ['day44-django-testing-ddnro.c9users.io', 'messenger-stream3.herokuapp.com']
 
 
 # Application definition
