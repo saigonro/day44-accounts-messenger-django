@@ -17,10 +17,12 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from home.views import get_index, get_secret
 from accounts import urls as accounts_urls
+from messenger import urls as messenger_urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', get_index, name="home"),
     url(r'secret', get_secret, name="secret"),
     url(r'accounts/', include(accounts_urls)),
+    url(r'^messenger/', include(messenger_urls)),
 ]

@@ -1,0 +1,23 @@
+{% extends 'home/base.html' %}
+{% load bootstrap_tags %}
+{% load staticfiles %}
+
+{% block styles %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'messenger/style.css' %}">
+{% endblock styles %}
+
+{% block content %}
+
+
+<h1>Compose message</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form | as_bootstrap }}
+    <input type="submit" value="Submit"/>
+    
+</form>
+
+
+{% endblock content %}
