@@ -31,6 +31,7 @@ def login(request):
 
 def logout(request):
     auth.logout(request)
+    messages.success(request, "You have sucessfully logged out")
     return redirect("home")
     
 def profile(request):
